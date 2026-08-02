@@ -11,7 +11,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 300px 1fr;
   grid-template-rows: 100px 850px 50px;
 }
 
@@ -22,6 +22,7 @@ body {
   grid-row-end: 4;
   display: grid;
   grid-template-rows: 100px 850px 50px;
+  border-right: 1px solid #ddc9ae;
 }
 
 .sidebar-header {
@@ -34,6 +35,32 @@ body {
   justify-content: center;
   align-items: flex-start;
   padding-left: 16px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #ddc9ae;
+}
+
+.page-title {
+  font-family: "Instrument Serif", serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 32px;
+  padding-top: 16px;
+  padding-bottom: 8px;
+}
+
+.sidebar-status-number {
+  padding-right: 4px;
+  font-weight: 700;
+}
+
+.sidebar-status {
+  display: flex;
+  background-color: #c2611f;
+  color: #fff8f0;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 4px 12px 4px;
+  font-size: 12px;
 }
 
 .sidebar-main {
@@ -44,6 +71,12 @@ body {
 .sidebar-footer {
   grid-row-start: 3;
   grid-row-end: 4;
+  border-top: 1px solid #ddc9ae;
+  color: #8a6545;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
 }
 
 .header {
@@ -51,6 +84,7 @@ body {
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
+  border-bottom: 1px solid #ddc9ae;
 }
 
 .main-content {
@@ -58,11 +92,4 @@ body {
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 4;
-}
-
-.page-title {
-  font-family: "Instrument Serif", serif;
-  font-style: italic;
-  font-weight: 400;
-  font-size: 20px;
 }
